@@ -3,12 +3,14 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - name : Checkout code
-      - uses: actions/checkout@v2
-      - name : Install npm
-      - uses : npm-i
-      - name : Run test
-      - run : npm test
+     - name : Checkout code
+     - uses : actions/checkout@v2
+
+     - name : Install npm
+     - uses : npm-i
+
+     - name : Run test
+ - run : npm test
 
 
 
@@ -18,17 +20,7 @@ jobs:
 
 
 
-on: [push]
-jobs:
-  check-bats-version:
-        runs-on : ubuntu-latest
-        steps:
-             name : Checkout code
-             uses: actions/checkout@v2
-             name : Install npm
-            uses : npm-i
-            name : Run test
-            run : npm test
+
 
 
            
